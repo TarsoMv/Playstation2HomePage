@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1e1e1e;
+    color: #d3b4ff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    background: linear-gradient(90deg, #000000, #3b0066);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.Intro{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#FundoAnimado{
+    flex: 1;
+}
+
+#FundoAnimado img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+#sobrePs2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(58, 0, 105, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+#sobrePs2 h1 {
+    margin-bottom: 15px;
+    color: #bb86fc;
+}
+
+.Infos{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.consoleContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.console{
+    width: 25rem;
+}
+
+.console img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.infoConsole{
+    background-color: rgba(58, 0, 105, 0.2);
+    border-radius: 10px;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+}
+
+footer:hover {
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .Intro {
+        flex-direction: column;
+    }
+    #FundoAnimado, #sobrePs2 {
+        width: 100%;
+    }
+}
