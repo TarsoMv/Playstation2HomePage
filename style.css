@@ -61,7 +61,7 @@ header{
     color: #bb86fc;
 }
 
-.Infos{
+.ContainerGeral{
     background-color: #333;
     display: flex;
     flex-direction: column;
@@ -73,11 +73,29 @@ header{
     margin-right: 20px;
     align-items: center;
 }
+#visibilidadeGames{
+    display: none;
+}
+
+.ContainerJogos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 304px;
+    max-width: 800px;
+
+    /* fundo translúcido */
+    background-color: rgba(199, 198, 198, 0.5); /* 0.5 = 50% de transparência */
+    padding: 20px; /* adiciona respiro interno */
+    border-radius: 10px; /* bordas arredondadas */
+    color: #3b0066;
+}
 
 .consoleContainer{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .console{
@@ -85,7 +103,7 @@ header{
 }
 
 .console img{
-    width: 100%;
+    width: 25rem;
     display: block;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5);
@@ -100,6 +118,58 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+#fundoGame{
+    background-image: url(""); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+}
+
+.Jogos{
+    display: flex;  
+    flex-direction: column;
+}
+
+
+
+.Pesquisa {
+    background-color: #777777;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input de pesquisa */
+.Pesquisa input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 220px;
+}
+
+/* Botão */
+.Pesquisa button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Pesquisa button:hover {
+    background-color: #222;
+}       
 
 footer{
     text-align: center;
@@ -123,3 +193,4 @@ footer:hover {
         width: 100%;
     }
 }
+
