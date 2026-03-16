@@ -53,7 +53,7 @@ document.querySelector('#search').addEventListener('submit', async (event) =>{
                     score: "",
                     launchYear: "",
                     gameGenre: "",
-                    backgroundImage: "https://i.makeagif.com/media/11-02-2015/s5_fgM.gif"
+                    backgroundImage: "media/ps2-rsod.gif"
             });
         }
 
@@ -65,6 +65,6 @@ function showInfo(json){
     document.querySelector("#gameScore").innerHTML = `Nota: ${json.score}` ?? "Sem nota";
     document.querySelector("#gameLaunchYear").innerHTML = json.launchYear || "Data não disponível";
      document.querySelector("#gameGenre").innerHTML = json.gameGenre || "Gênero não encontrado"
-    document.getElementById("fundoGame").style.backgroundImage = "url(" + json.backgroundImage + ")"; 
+    document.getElementById("fundoGame").style.backgroundImage = `url(${json.backgroundImage})`; 
 };
 
