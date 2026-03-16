@@ -4,8 +4,8 @@ Um website feito baseado no **PlayStation 2**, desenvolvida com HTML, CSS e Java
 
 ## 📸 Preview
 
-
-
+![Screenshot 1](https://raw.githubusercontent.com/TarsoMv/Playstation2HomePage/refs/heads/main/preview/Screenshot1.png)
+![Screenshot 2](https://raw.githubusercontent.com/TarsoMv/Playstation2HomePage/refs/heads/main/preview/Screenshot2.png)
 
 ## Tecnologias
 
